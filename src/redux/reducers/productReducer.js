@@ -33,7 +33,7 @@ const productReducer = (state = initialState, action) => {
           selectedProduct.quantity = selectedProduct.quantity - 1;
           return {
             ...state,
-            cart: [selectedProduct, ...newCart],
+            cart: [...newCart, selectedProduct ],
           }
         }
       }
